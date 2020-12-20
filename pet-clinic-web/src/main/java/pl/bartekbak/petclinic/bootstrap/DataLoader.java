@@ -6,8 +6,6 @@ import pl.bartekbak.petclinic.model.Owner;
 import pl.bartekbak.petclinic.model.Vet;
 import pl.bartekbak.petclinic.services.OwnerService;
 import pl.bartekbak.petclinic.services.VetService;
-import pl.bartekbak.petclinic.services.map.OwnerServiceMap;
-import pl.bartekbak.petclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,10 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
