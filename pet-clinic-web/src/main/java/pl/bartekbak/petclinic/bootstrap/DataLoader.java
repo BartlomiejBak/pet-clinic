@@ -80,7 +80,6 @@ public class DataLoader implements CommandLineRunner {
         catVisit.setDescription("Visit with cat");
         visitService.save(catVisit);
 
-
         System.out.println("Loaded Owners...");
 
         Speciality radiology = new Speciality();
