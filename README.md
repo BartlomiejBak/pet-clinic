@@ -1,3 +1,5 @@
+[![CircleCI](https://app.circleci.com/pipelines/github/BartlomiejBak/pet-clinic/tree/master.svg?style=svg)](https://app.circleci.com/pipelines/github/BartlomiejBak/pet-clinic/tree/master)
+
 # Pet Clinic
 Updated version of pet clinic.
 
