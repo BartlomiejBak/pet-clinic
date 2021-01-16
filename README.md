@@ -1,4 +1,4 @@
-[![CircleCI](https://app.circleci.com/pipelines/github/BartlomiejBak/pet-clinic/tree/master.svg?style=svg)](https://app.circleci.com/pipelines/github/BartlomiejBak/pet-clinic/tree/master)
+[![CircleCI](https://app.circleci.com/pipelines/github/BartlomiejBak/pet-clinic.svg?style=svg)](https://app.circleci.com/pipelines/github/BartlomiejBak/pet-clinic)
 
 # Pet Clinic
 Updated version of pet clinic.
