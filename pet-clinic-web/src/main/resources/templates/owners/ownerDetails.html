@@ -37,7 +37,7 @@
                 <dt>Name</dt>
                 <dd th:text="${pet.name}"></dd>
                 <dt>Birth Date</dt>
-                <dd th:text="${#temporals.format(pet.birthday, 'yyyy-MM-dd')}"></dd>
+                <dd th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}"></dd>
                 <dt>Type</dt>
                 <dd th:text="${pet.petType}"></dd>
             </dl>
@@ -55,10 +55,10 @@
                     <td th:text="${visit?.description}"></td>
                 </tr>
                 <tr>
-                    <td><a href="@{{ownerId}/pets/{petId}/edit(ownerId=${owner.id},petId=${pet.id})}">
+                    <td><a th:href="@{{ownerId}/pets/{petId}/edit(ownerId=${owner.id},petId=${pet.id})}">
                         Edit pet
                     </a> </td>
-                    <td><a href="@{{ownerId}/pets/{petId}/visits/new(ownerId=${owner.id},petId=${pet.id})}">
+                    <td><a th:href="@{{ownerId}/pets/{petId}/visits/new(ownerId=${owner.id},petId=${pet.id})}">
                         Add visit
                     </a> </td>
 
